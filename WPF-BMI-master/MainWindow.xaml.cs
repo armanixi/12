@@ -39,5 +39,11 @@ namespace _0419WpfApp1
         {
             
         }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            HeightBox.Text = HeightBar.Value.ToString();
+            WeightBox.Text = WeightBar.Value.ToString();
+        }
     }
 }
